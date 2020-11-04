@@ -1,0 +1,137 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background: #1c1c1c;
+  opacity: 0.8;
+}
+.modal {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px 40px;
+  background: #fff;
+  z-index: 10;
+}
+.modal .close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  cursor: pointer;
+}
+.modal__form {
+  color: #3b3b3b;
+}
+.modal__form h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 35px;
+}
+.modal__form p {
+  font-size: 14px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.modal__form .label-fdc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal__form .label input[type="text"],
+.modal__form .label input[type="email"],
+.modal__form .label input[type="password"] {
+  width: 100%;
+  color: #9c9c9c;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dadada;
+  font-weight: 500;
+}
+.modal__form .label input[type="submit"] {
+  margin: 20px auto 0;
+  padding: 20px 40px;
+  font-weight: 600;
+}
+.modal__form .label-login input {
+  margin-bottom: 20px;
+}
+.modal__form .label-login .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.modal__form .label-login .checkbox input {
+  cursor: pointer;
+  margin: 0 6px 10px 0;
+}
+.modal__form .label-login .link a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3b3b3b;
+}
+.modal__form .label-login .link a:last-child {
+  padding-left: 10px;
+}
+.modal__form .btn-log {
+  width: 280px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.modal__form .btn-log img {
+  filter: grayscale(100%) contrast(200%);
+}
+.modal__form .btn-log p {
+  color: #fff;
+  padding: 0 0 0 10px;
+}
+.modal__form .btn-log-facebook {
+  background: #3b5998;
+}
+.modal__form .btn-log-twitter {
+  background: #41abe1;
+}
+.modal__form .btn-log-google {
+  background: #ea4335;
+}
+.modal__form-pr {
+  padding-right: 40px;
+  border-right: 1px solid #dadada;
+  width: 310px;
+}
+.modal__form-pl {
+  padding-left: 40px;
+}
+@media (max-width: 830px) {
+  .modal__form-pr {
+    padding: 0;
+    border: none;
+    width: auto;
+  }
+  .modal__form-pl {
+    padding: 0;
+  }
+  .modal .row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 450px) {
+  .modal .close {
+    top: 10px;
+    right: 10px;
+  }
+}
+@media (max-width: 380px) {
+  #modalLogin {
+    top: 0;
+    left: 10px;
+    transform: translate(0%, 0%);
+  }
+}

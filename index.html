@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="test, wezom">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test | Wezom</title>
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<header class="header">
+  <div class="top">
+    <div class="container">
+      <nav class="navbar row">
+        <div class="navbar__left">
+          <button id="burger" class="burger">
+            <span class="burger__line burger__line-m"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line burger__line-s"></span>
+          </button>
+          <ul id="navbar">
+            <li class="navbar__btn active"><a href="#">Главная</a></li>
+            <li class="navbar__btn"><a href="#">О Компании</a></li>
+            <li class="navbar__btn"><a href="#">ссылка 1</a></li>
+            <li class="navbar__btn"><a href="#">ссылка 2</a></li>
+            <li class="navbar__btn"><a href="#">ссылка 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar__logo">
+          <img src="assets/logo.png" alt="logo">
+        </div>
+        <div class="navbar__right">
+          <button id="login" class="btn"><img src="assets/iconUser.png" alt="icon user">Вход</button>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="bottom row">
+      <div class="logo col-s">
+        <a href="#"><img src="assets/logo.png" alt="Logo"></a>
+      </div>
+      <div class="col-m">
+        <div class="contacts">
+          <div class="contacts__number">
+            +380 98 170 00 740
+          </div>
+          <div class="contacts__number">
+            +380 98 170 00 740
+          </div>
+          <button id="collBackMe" class="contacts__callback btn">
+            <img src="assets/telephone.png" alt="telephone">
+            Перезвонить мне
+          </button>
+        </div>
+      </div>
+      <div class="actions fcsb col-s">
+        <div class="actions__element">
+          <div id="digil-compare" class="digil">
+            <span id="compare">1</span>
+          </div>
+          <img src="assets/compare.png" alt="">
+          <span>сравнение</span>
+        </div>
+        <div class="actions__element">
+          <div id="digil-favorites" class="digil">
+            <span id="favorites">1</span>
+          </div>
+          <img src="assets/favorites.png" alt="">
+          <span>избранное</span>
+        </div>
+        <div class="actions__element">
+          <img src="assets/basket.png" alt="">
+          <span>корзина</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <section class="top row">
+      <div class="menu col-s">
+        <div class="menu__top gradient">
+          <img src="assets/burger.png" alt="burger">
+          <span>Меню</span>
+        </div>
+        <div class="menu__list">
+          <ul id="menu">
+            <li class="fcsb menu__btn active"><span>ссылка 1</span><img src="assets/arrows.png" alt="arrows"></li>
+            <li class="fcsb menu__btn"><span>ссылка 2</span><img src="assets/arrows.png" alt="arrows"></li>
+            <li class="fcsb menu__btn"><span>ссылка 3</span><img src="assets/arrows.png" alt="arrows"></li>
+            <li class="fcsb menu__btn"><span>ссылка 4</span><img src="assets/arrows.png" alt="arrows"></li>
+            <li class="fcsb menu__btn"><span>ссылка 5</span><img src="assets/arrows.png" alt="arrows"></li>
+            <li class="fcsb menu__btn"><span>ссылка 6</span><img src="assets/arrows.png" alt="arrows"></li>
+            <li class="fcsb menu__btn"><span>ссылка 7</span><img src="assets/arrows.png" alt="arrows"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-l">
+        <div class="search">
+          <form class="fcsb" action="#">
+            <input class="search__input" minlength="2" required type="text" placeholder="Поиск по сайту">
+            <select class="search__category" name="category" id="category">
+              <option value="all_category">Все категории</option>
+              <option value="category1">Категория 1</option>
+              <option value="category2">Категория 2</option>
+              <option value="category3">Категория 3</option>
+              <option value="category4">Категория 4</option>
+            </select>
+            <input class="search__submit btn" type="submit" value="поиск">
+          </form>
+        </div>
+        <div class="form">
+          <div class="form__top">
+            <ul id="select" class="fcsb">
+              <li class="fcsb select__btn active"><img class="grayscale" src="assets/vector1.png" alt="vector"><span>Ссылка 1</span></li>
+              <li class="fcsb select__btn"><img class="grayscale" src="assets/vector2.png" alt="vector"><span>Ссылка 2</span></li>
+              <li class="fcsb select__btn"><img class="grayscale" src="assets/vector3.png" alt="vector"><span>Ссылка 3</span></li>
+              <li class="fcsb select__btn"><img class="grayscale" src="assets/vector4.png" alt="vector"><span>Ссылка 4</span></li>
+              <li class="fcsb select__btn"><img class="grayscale" src="assets/vector5.png" alt="vector"><span>Ссылка 5</span></li>
+            </ul>
+          </div>
+          <div class="form__tables">
+            <form action="#" class="table">
+              <div id="table__link" class="table__link mark">
+                <button class="btn table__btn active">Tab 1</button>
+                <button class="btn table__btn">Tab 2</button>
+              </div>
+              <div id="table" class="tables">
+                <div class="table-select active">
+                  <div class="table__marks fcsb">
+                    <div class="mark">
+                      <select name="mark1" id="mark1">
+                        <option value="select1">Select 1</option>
+                        <option value="select1">Select 2</option>
+                        <option value="select1">Select 3</option>
+                        <option value="select1">Select 4</option>
+                        <option value="select1">Select 5</option>
+                        <option value="select1">Select 6</option>
+                        <option value="select1">Select 7</option>
+                      </select>
+                    </div>
+                    <div class="mark">
+                      <select name="mark2" id="mark2">
+                        <option value="select1">Select 1</option>
+                        <option selected value="select1">Select 2</option>
+                        <option value="select1">Select 3</option>
+                        <option value="select1">Select 4</option>
+                        <option value="select1">Select 5</option>
+                        <option value="select1">Select 6</option>
+                        <option value="select1">Select 7</option>
+                      </select>
+                    </div>
+                    <div class="mark">
+                      <select name="mark3" id="mark3">
+                        <option value="select1">Select 1</option>
+                        <option value="select1">Select 2</option>
+                        <option selected value="select1">Select 3</option>
+                        <option value="select1">Select 4</option>
+                        <option value="select1">Select 5</option>
+                        <option value="select1">Select 6</option>
+                        <option value="select1">Select 7</option>
+                      </select>
+                    </div>
+                    <div class="mark">
+                      <select name="mark4" id="mark4">
+                        <option value="select1">Select 1</option>
+                        <option value="select1">Select 2</option>
+                        <option value="select1">Select 3</option>
+                        <option selected value="select1">Select 4</option>
+                        <option value="select1">Select 5</option>
+                        <option value="select1">Select 6</option>
+                        <option value="select1">Select 7</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="table__marks fcsb">
+                    <div class="mark">
+                      <select name="mark5" id="mark5">
+                        <option value="select1">Select 1</option>
+                        <option value="select1">Select 2</option>
+                        <option value="select1">Select 3</option>
+                        <option value="select1">Select 4</option>
+                        <option selected value="select1">Select 5</option>
+                        <option value="select1">Select 6</option>
+                        <option value="select1">Select 7</option>
+                      </select>
+                    </div>
+                    <div class="mark">
+                      <select name="mark6" id="mark6">
+                        <option value="select1">Select 1</option>
+                        <option value="select1">Select 2</option>
+                        <option value="select1">Select 3</option>
+                        <option value="select1">Select 4</option>
+                        <option value="select1">Select 5</option>
+                        <option selected value="select1">Select 6</option>
+                        <option value="select1">Select 7</option>
+                      </select>
+                    </div>
+                    <div class="mark">
+                      <select name="mark7" id="mark7">
+                        <option value="select1">Select 1</option>
+                        <option value="select1">Select 2</option>
+                        <option value="select1">Select 3</option>
+                        <option value="select1">Select 4</option>
+                        <option value="select1">Select 5</option>
+                        <option value="select1">Select 6</option>
+                        <option selected value="select1">Select 7</option>
+                      </select>
+                    </div>
+                    <div class="mark__price fcsb">
+                      <p>Цена</p>
+                      <div class="mark">
+                        <input type="number" min="0" placeholder="50">
+                      </div>
+                      <div class="mark">
+                        <input type="number" min="0" placeholder="250000">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-select">
+                  <div class="table__marks fcsb">
+                    <div class="mark">
+                      <select name="mark8" id="mark8">
+                        <option value="select1">Select 1</option>
+                        <option value="select1">Select 2</option>
+                        <option value="select1">Select 3</option>
+                        <option value="select1">Select 4</option>
+                        <option value="select1">Select 5</option>
+                        <option value="select1">Select 6</option>
+                      </select>
+                    </div>
+                    <div class="mark">
+                      <select name="mark9" id="mark9">
+                        <option value="select1">Select 1</option>
+                        <option selected value="select1">Select 2</option>
+                        <option value="select1">Select 3</option>
+                        <option value="select1">Select 4</option>
+                        <option value="select1">Select 5</option>
+                        <option value="select1">Select 6</option>
+                      </select>
+                    </div>
+                    <div class="mark">
+                      <select name="mark10" id="mark10">
+                        <option value="select1">Select 1</option>
+                        <option value="select1">Select 2</option>
+                        <option selected value="select1">Select 3</option>
+                        <option value="select1">Select 4</option>
+                        <option value="select1">Select 5</option>
+                        <option value="select1">Select 6</option>
+                      </select>
+                    </div>
+                    <div class="mark">
+                      <select name="mark11" id="mark11">
+                        <option value="select1">Select 1</option>
+                        <option value="select1">Select 2</option>
+                        <option value="select1">Select 3</option>
+                        <option selected value="select1">Select 4</option>
+                        <option value="select1">Select 5</option>
+                        <option value="select1">Select 6</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="table__marks fcsb">
+                    <div class="nemo"></div>
+                    <div class="mark">
+                      <select name="mark12" id="mark12">
+                        <option value="select1">Select 1</option>
+                        <option value="select1">Select 2</option>
+                        <option value="select1">Select 3</option>
+                        <option value="select1">Select 4</option>
+                        <option value="select1">Select 5</option>
+                        <option selected value="select1">Select 6</option>
+                      </select>
+                    </div>
+                    <div class="mark__price fcsb">
+                      <p>Цена</p>
+                      <div class="mark">
+                        <input type="number" min="0" placeholder="50">
+                      </div>
+                      <div class="mark">
+                        <input type="number" min="0" placeholder="250000">
+                      </div>
+                    </div>
+                    <div class="nemo"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="table__bottom fcsb">
+                <button class="btn"><img src="assets/x.png" alt="closed">Очистить фильтр</button>
+                <input class="btn gradient" type="submit" value="Применить фильтр">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main row">
+      <div class="main__top fcsb">
+        <div class="title">
+          <h1>Карточки товаров</h1>
+          <div class="bottom-line"></div>
+        </div>
+        <div class="link">
+          <a href="#">Ссылка в каталог<img src="assets/arrow2.png" alt="arrow"></a>
+        </div>
+      </div>
+    </section>
+    <section class="cards row">
+      <div class="card col-s">
+        <div class="card__top">
+          <p>Mark</p>
+          <a href="#">Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany</a>
+        </div>
+        <div class="info">
+          <div class="info__reviews">
+            <img src="assets/star.png" alt="star">
+            <img src="assets/star.png" alt="star">
+            <img src="assets/star.png" alt="star">
+            <img src="assets/star.png" alt="star">
+            <img src="assets/star.png" alt="star">
+            <a href="#">Отзывы (10)</a>
+          </div>
+          <div class="info__availability">
+            <p>В наличии: 24 шт.</p>
+          </div>
+        </div>
+        <div class="card__main">
+          <div class="product">
+            <img class="product__wheel" src="assets/wheel.png" alt="wheel">
+            <div class="product__type">
+              <img src="assets/type_1.png" alt="sum">
+              <p>летняя</p>
+              <img src="assets/type_2.png" alt="car">
+              <p>легковая</p>
+              <img src="assets/type_3.png" alt="label">
+              <p>новая</p>
+            </div>
+          </div>
+        </div>
+        <div class="card__sticker">
+          <img src="assets/sticker_1.png" alt="new">
+          <img src="assets/sticker_2.png" alt="hit">
+          <img src="assets/sticker_3.png" alt="sale">
+        </div>
+        <div class="card__price">
+          <h2>599 <small>грн.</small></h2>
+          <p>1 250 грн.</p>
+        </div>
+        <div class="card__btn">
+          <button class="btn fcsb gradient">
+            <img src="assets/basket2.png" alt="cart">
+            купить товар
+          </button>
+        </div>
+        <div class="card__bottom fcsb">
+          <div class="compare">
+            <button id="compare1"><img src="assets/compare2.png" alt="compare"><span>Сравнить товар</span><span>В сравнении</span></button>
+          </div>
+          <div class="favorites">
+            <button id="favorites1"><img src="assets/favorites2.png" alt="favorites"><span>В избранное</span><span>В избранном</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="card col-s">
+        <div class="card__top">
+          <p>Mark</p>
+          <a href="#">Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany</a>
+        </div>
+        <div class="info">
+          <div class="info__reviews">
+            <img src="assets/star.png" alt="star">
+            <img src="assets/star.png" alt="star">
+            <img src="assets/star.png" alt="star">
+            <img class="grayscale" src="assets/star.png" alt="star">
+            <img class="grayscale" src="assets/star.png" alt="star">
+            <a href="#">Отзывы (10)</a>
+          </div>
+          <div class="info__availability">
+            <p>В наличии: 24 шт.</p>
+          </div>
+        </div>
+        <div class="card__main">
+          <div class="product">
+            <img class="product__wheel" src="assets/wheel_2.png" alt="wheel">
+            <div class="product__type">
+              <img src="assets/type_1.png" alt="sum">
+              <p>летняя</p>
+              <img src="assets/type_3.png" alt="label">
+              <p>новая</p>
+            </div>
+          </div>
+        </div>
+        <div class="card__sticker">
+          <img src="assets/sticker_1.png" alt="new">
+          <img src="assets/sticker_2.png" alt="hit">
+        </div>
+        <div class="card__price">
+          <h2>599 <small>грн.</small></h2>
+          <p>1 250 грн.</p>
+        </div>
+        <div class="card__btn">
+          <button class="btn fcsb gradient">
+            <img src="assets/basket2.png" alt="cart">
+            купить товар
+          </button>
+        </div>
+        <div class="card__bottom fcsb">
+          <div class="compare">
+            <button id="compare2"><img src="assets/compare2.png" alt="compare"><span>Сравнить товар</span><span>В сравнении</span></button>
+          </div>
+          <div class="favorites">
+            <button id="favorites2"><img src="assets/favorites2.png" alt="favorites"><span>В избранное</span><span>В избранном</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="card col-s">
+        <div class="card__top">
+          <p>Mark</p>
+          <a href="#">Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany</a>
+        </div>
+        <div class="info">
+          <div class="info__reviews">
+            <img class="grayscale" src="assets/star.png" alt="star">
+            <img class="grayscale" src="assets/star.png" alt="star">
+            <img class="grayscale" src="assets/star.png" alt="star">
+            <img class="grayscale" src="assets/star.png" alt="star">
+            <img class="grayscale" src="assets/star.png" alt="star">
+            <a href="#">Без отзывов</a>
+          </div>
+          <div class="info__availability">
+            <p>В наличии: 24 шт.</p>
+          </div>
+        </div>
+        <div class="card__main">
+          <div class="product">
+            <img class="product__wheel" src="assets/wheel_3.png" alt="wheel">
+            <div class="product__type">
+              <img src="assets/type_3.png" alt="label">
+              <p>новая</p>
+            </div>
+          </div>
+        </div>
+        <div class="card__sticker">
+          <img src="assets/sticker_1.png" alt="new">
+          <img src="assets/sticker_2.png" alt="hit">
+          <img src="assets/sticker_3.png" alt="sale">
+        </div>
+        <div class="card__price">
+          <h2>9 570 <small>грн.</small></h2>
+          <p>11 250 грн.</p>
+        </div>
+        <div class="card__btn">
+          <button class="btn fcsb gradient">
+            <img src="assets/basket2.png" alt="cart">
+            купить товар
+          </button>
+        </div>
+        <div class="card__bottom fcsb">
+          <div class="compare">
+            <button id="compare3"><img src="assets/compare2.png" alt="compare"><span>Сравнить товар</span><span>В сравнении</span></button>
+          </div>
+          <div class="favorites">
+            <button id="favorites3"><img src="assets/favorites2.png" alt="favorites"><span>В избранное</span><span>В избранном</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="card col-s">
+        <div class="card__top">
+          <p>Mark</p>
+          <a href="#">Антифриз Fosser Antifreeze</a>
+        </div>
+        <div class="info">
+          <div class="info__reviews">
+            <img src="assets/star.png" alt="star">
+            <img src="assets/star.png" alt="star">
+            <img src="assets/star.png" alt="star">
+            <img src="assets/star.png" alt="star">
+            <img src="assets/star.png" alt="star">
+            <a href="#">Отзывы (10)</a>
+          </div>
+          <div class="info__availability">
+            <p>В наличии: 24 шт.</p>
+          </div>
+        </div>
+        <div class="card__main">
+          <div class="product">
+            <img class="product__wheel" src="assets/wheel.png" alt="wheel">
+            <div class="product__type">
+              <img src="assets/type_1.png" alt="sum">
+              <p>летняя</p>
+              <img src="assets/type_2.png" alt="car">
+              <p>легковая</p>
+            </div>
+          </div>
+        </div>
+        <div class="card__sticker"></div>
+        <div class="card__price">
+          <h2>599 <small>грн.</small></h2>
+        </div>
+        <div class="card__btn">
+          <button class="btn fcsb gradient">
+            <img src="assets/basket2.png" alt="cart">
+            купить товар
+          </button>
+        </div>
+        <div class="card__bottom fcsb">
+          <div class="compare">
+            <button id="compare4"><img src="assets/compare2.png" alt="compare"><span>Сравнить товар</span><span>В сравнении</span></button>
+          </div>
+          <div class="favorites">
+            <button id="favorites4"><img src="assets/favorites2.png" alt="favorites"><span>В избранное</span><span>В избранном</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-m block block-large">
+        <div class="block__top">
+          <div class="title">
+            <h3>Блок 1</h3>
+            <div class="bottom-line"></div>
+          </div>
+        </div>
+        <div class="block__main">
+          <h2>
+            Будьте в курсе новостей и новинок!
+          </h2>
+          <h1>
+            Подписывайтесь на рассылку
+          </h1>
+          <div class="input">
+            <form>
+              <label for="email">
+                <input id="email" minlength="4" required type="email" placeholder="Укажите свой email для подписки">
+                <input id="follow" class="btn" type="submit" value="подписаться">
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs block">
+        <div class="block__top">
+          <div class="title">
+            <h3>Блок ссылок 1</h3>
+            <div class="bottom-line"></div>
+          </div>
+        </div>
+        <div class="block__links">
+          <a href="#">Ссылка 1</a>
+          <a href="#">Ссылка 2</a>
+          <a href="#">Ссылка 3</a>
+          <a href="#">Ссылка 4</a>
+        </div>
+      </div>
+      <div class="col-xs block">
+        <div class="block__top">
+          <div class="title">
+            <h3>Блок 2</h3>
+            <div class="bottom-line"></div>
+          </div>
+        </div>
+        <div class="block__links">
+          <a href="#">Ссылка 1</a>
+          <a href="#">Ссылка 2</a>
+          <a href="#">Ссылка 3</a>
+          <a href="#">Ссылка 4</a>
+        </div>
+      </div>
+      <div class="col-xs block">
+        <div class="block__top">
+          <div class="title">
+            <h3>Блок ссылок 3</h3>
+            <div class="bottom-line"></div>
+          </div>
+        </div>
+        <div class="block__links">
+          <a href="#">Ссылка 1</a>
+          <a href="#">Ссылка 2</a>
+          <a href="#">Ссылка 3</a>
+          <a href="#">Ссылка 4</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer__bottom">
+      <div class="row">
+        <div class="col-m">
+          <div class="logo">
+            <img class="grayscale" src="assets/logo.png" alt="logo">
+            <p>© Copyrith 2017. Тестовое задание Wezom</p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="social">
+            <a href="#" class="social__wrapper">
+              <img src="assets/socVk.png" alt="vk">
+            </a>
+            <a href="#" class="social__wrapper">
+              <img src="assets/socFacebook.png" alt="facebook">
+            </a>
+            <a href="#" class="social__wrapper">
+              <img src="assets/socTwitter.png" alt="twitter">
+            </a>
+            <a href="#" class="social__wrapper">
+              <img src="assets/socYuotube.png" alt="youTube">
+            </a>
+          </div>
+        </div>
+        <div class="col-xs">
+          <div class="wezom">
+            <img src="assets/logoWezom.png" alt="wezom">
+            <div class="wezom__right">
+              <p>Разработка тестового</p>
+              <p>Wezom Agency</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div style="display: none" id="modal" class="modal">
+  <div class="close"><img src="assets/close.png" alt="close"></div>
+  <form class="modal__form" name="myForm">
+    <h3>Перезвоните мне</h3>
+    <p>Номер телефона</p>
+    <label class="label label-fdc" for="inputMask">
+      <input name="fname" minlength="10" required type="text" id="inputMask" />
+      <input id="submit" class="btn" type="submit" value="Перезвоните мне">
+    </label>
+  </form>
+</div>
+<div style="display: none" id="modalLogin" class="modal">
+  <div class="close"><img src="assets/close.png" alt="close"></div>
+  <div class="row">
+    <form class="modal__form modal__form-pr" name="myForm">
+      <h3>Вход в личный кабинет</h3>
+      <div class="label label-login">
+        <p>Ваш email</p>
+        <input name="fname" minlength="4" required type="email" placeholder="mikel_ivanov98@gmail.com" />
+        <p>Пароль</p>
+        <input name="fname" minlength="4" required type="password" placeholder="**********" />
+        <div class="checkbox">
+          <input name="checkbox" type="checkbox">
+          <p>Запомнить меня</p>
+        </div>
+        <div class="link">
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Регистрация</a>
+        </div>
+        <input class="btn" type="submit" value="Войти в личный кабинет">
+      </div>
+    </form>
+    <div class="modal__form modal__form-pl">
+      <h3>Войти с помощью</h3>
+      <div class="btn-log btn-log-facebook">
+        <img src="assets/socFacebook.png" alt="facebook">
+        <p>Facebook</p>
+      </div>
+      <div class="btn-log btn-log-twitter">
+        <img src="assets/socTwitter.png" alt="twitter">
+        <p>Twitter</p>
+      </div>
+      <div class="btn-log btn-log-google">
+        <img src="assets/socGoogle.png" alt="google">
+        <p>Google</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="display: none" id="modalFollow" class="modal">
+  <div class="close"><img src="assets/close.png" alt="close"></div>
+  <div class="modal__form">
+    <p>Вы успешно подписаны на рассылку</p>
+  </div>
+</div>
+</body>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script type="text/javascript" src="app.js"></script>
+</html>
